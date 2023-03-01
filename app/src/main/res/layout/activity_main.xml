@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/night_bg"
+        android:background="@drawable/night_bg"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/day_bg"
+        android:background="@drawable/day_bg"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view_kalan_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seçime Son:"
+            android:textColor="#bdb6e0"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_view_gun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#35BCE1"
+            android:text="00"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_gun_aciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gün"
+            android:textColor="#bdb6e0"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/text_view_saat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_view_saat_aciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saat"
+            android:textColor="#bdb6e0"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/text_view_dakika"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_view_dakika_aciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dakika"
+            android:textColor="#bdb6e0"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/text_view_saniye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#30BAE3"
+            android:text="00"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_saniye_aciklama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saniye"
+            android:textColor="#bdb6e0"
+            android:textSize="24sp"/>
+        <com.mahfa.dnswitch.DayNightSwitch
+            android:id="@+id/day_night_switch"
+            android:layout_width="76dp"
+            android:contentDescription="switch"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
